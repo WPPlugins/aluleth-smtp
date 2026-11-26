@@ -1,0 +1,2683 @@
+# Copyright (C) 2026 Aluleth
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Aluleth SMTP 0.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aluleth-smtp\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-12T17:20:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: aluleth-smtp\n"
+
+#. Plugin Name of the plugin
+#: aluleth-smtp.php
+msgid "Aluleth SMTP"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: aluleth-smtp.php
+msgid "https://market.alulethmarketing.com/"
+msgstr ""
+
+#. Description of the plugin
+#: aluleth-smtp.php
+msgid "Send your WordPress emails through a real email service: Amazon SES, SendGrid, Brevo, Mailgun, Postmark, Resend, Gmail, Microsoft 365 and more, with a fallback, routing rules, a sending queue with limits, a safe email log, bounce handling and deliverability checks."
+msgstr ""
+
+#. Author of the plugin
+#: aluleth-smtp.php
+msgid "Aluleth"
+msgstr ""
+
+#. Author URI of the plugin
+#: aluleth-smtp.php
+msgid "https://alulethmarketing.com/"
+msgstr ""
+
+#: aluleth-smtp.php:65
+msgid "Aluleth SMTP needs a newer version of your other Aluleth plugins. Please update them."
+msgstr ""
+
+#: includes/class-admin-tools.php:59
+msgid "Done: the service will now report delivered emails, bounces and spam reports here."
+msgstr ""
+
+#: includes/class-admin-tools.php:71
+#: includes/class-admin-tools.php:91
+#: includes/class-admin-tools.php:110
+#: includes/class-oauth.php:154
+msgid "This connection does not exist any more."
+msgstr ""
+
+#: includes/class-admin-tools.php:79
+msgid "New address made. The old one no longer works: give the new one to the service."
+msgstr ""
+
+#: includes/class-admin-tools.php:95
+msgid "Signing key removed: events are accepted with the secret address only."
+msgstr ""
+
+#: includes/class-admin-tools.php:98
+msgid "Signing key saved: events without the service’s signature are now refused."
+msgstr ""
+
+#: includes/class-admin-tools.php:113
+msgid "Noted. The state changes to “Working” when the first event arrives."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-admin-tools.php:126
+#, php-format
+msgid "%s gets emails again."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-admin-tools.php:126
+msgid "This address was not on the list."
+msgstr ""
+
+#: includes/class-admin-tools.php:138
+#: includes/class-admin.php:300
+msgid "Enter a valid email address."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-admin-tools.php:142
+#, php-format
+msgid "%s no longer gets any email from this site."
+msgstr ""
+
+#: includes/class-admin-tools.php:189
+msgid "Rules saved."
+msgstr ""
+
+#: includes/class-admin-tools.php:201
+msgid "No connection sends from this domain."
+msgstr ""
+
+#: includes/class-admin-tools.php:228
+#: includes/class-admin.php:309
+#: includes/class-screens-bounces.php:183
+#: includes/class-screens.php:727
+msgid "Add a connection first."
+msgstr ""
+
+#: includes/class-admin-tools.php:231
+msgid "In Gmail, open each one and choose “Show original”: SPF, DKIM and DMARC should say PASS."
+msgstr ""
+
+#: includes/class-admin-tools.php:244
+msgid "Nothing to import."
+msgstr ""
+
+#. translators: 1: number of connections, 2: plugin name.
+#: includes/class-admin-tools.php:250
+#, php-format
+msgid "%1$d connection imported from %2$s and checked."
+msgid_plural "%1$d connections imported from %2$s and checked."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: plugin name.
+#: includes/class-admin-tools.php:253
+#, php-format
+msgid "Now deactivate %s, so that only Aluleth SMTP sends your emails."
+msgstr ""
+
+#: includes/class-admin.php:60
+#: includes/class-screens.php:57
+#: includes/class-screens.php:194
+msgid "Email sending"
+msgstr ""
+
+#: includes/class-admin.php:90
+msgid "Copied"
+msgstr ""
+
+#: includes/class-admin.php:91
+msgid "Delete this connection? Emails will use the other connections."
+msgstr ""
+
+#: includes/class-admin.php:106
+msgid "Aluleth SMTP is active, but your emails still go out the default way."
+msgstr ""
+
+#: includes/class-admin.php:113
+msgid "Choose the service that sends them"
+msgstr ""
+
+#: includes/class-admin.php:124
+#: includes/class-oauth.php:136
+msgid "Sorry, you are not allowed to do this."
+msgstr ""
+
+#: includes/class-admin.php:242
+msgid "Saved. The sign-in still works."
+msgstr ""
+
+#: includes/class-admin.php:246
+msgid "Saved. The service accepted the settings. Send a test email to be sure the From address is allowed."
+msgstr ""
+
+#: includes/class-admin.php:249
+msgid "Saved. This service has no check without sending: send a test email."
+msgstr ""
+
+#. translators: %s: error.
+#: includes/class-admin.php:253
+#, php-format
+msgid "Saved, but the check found a problem: %s"
+msgstr ""
+
+#: includes/class-admin.php:267
+msgid "Connection deleted."
+msgstr ""
+
+#: includes/class-admin.php:279
+#: includes/class-connections.php:421
+msgid "The service accepted the settings."
+msgstr ""
+
+#: includes/class-admin.php:282
+msgid "This service has no check without sending: send a test email."
+msgstr ""
+
+#. translators: 1: connection name, 2: site name.
+#: includes/class-admin.php:314
+#, php-format
+msgid "Test email from %2$s through %1$s"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-admin.php:317
+#, php-format
+msgid "Connection: %s."
+msgstr ""
+
+#. translators: 1: connection name, 2: service name.
+#: includes/class-admin.php:320
+#, php-format
+msgid "Connection: %1$s (%2$s)."
+msgstr ""
+
+#: includes/class-admin.php:322
+msgid "This email was sent by Aluleth SMTP to check your settings."
+msgstr ""
+
+#: includes/class-admin.php:322
+msgid "If it reached your inbox (not the spam folder), your emails can go out this way."
+msgstr ""
+
+#: includes/class-admin.php:363
+msgid "Test email accepted."
+msgstr ""
+
+#. translators: 1: connection, 2: address.
+#: includes/class-admin.php:368
+#, php-format
+msgid "%1$s accepted the test email for %2$s. Check that inbox (and its spam folder)."
+msgstr ""
+
+#: includes/class-admin.php:372
+msgid "The email was not sent."
+msgstr ""
+
+#. translators: %s: error.
+#: includes/class-admin.php:375
+#, php-format
+msgid "Not sent yet, it will be tried again: %s"
+msgstr ""
+
+#: includes/class-admin.php:422
+msgid "Routing saved."
+msgstr ""
+
+#. translators: %d: number of emails.
+#: includes/class-admin.php:434
+#, php-format
+msgid "%d email handled."
+msgid_plural "%d emails handled."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-admin.php:448
+msgid "Only a summary of this email was kept: it cannot be sent again."
+msgstr ""
+
+#: includes/class-admin.php:457
+msgid "This email held a link or a code that gives access to an account; it was hidden in the log, so the email cannot be sent again. Ask the person to request a new one."
+msgstr ""
+
+#: includes/class-admin.php:470
+msgid "Sent again. It is the newest row of the log."
+msgstr ""
+
+#: includes/class-admin.php:470
+msgid "It could not be sent again: see the newest row of the log."
+msgstr ""
+
+#: includes/class-admin.php:488
+msgid "Deleted from the log."
+msgstr ""
+
+#: includes/class-admin.php:556
+msgid "Paste the Slack address that starts with https://hooks.slack.com/services/"
+msgstr ""
+
+#: includes/class-admin.php:559
+msgid "Paste the Discord address that starts with https://discord.com/api/webhooks/"
+msgstr ""
+
+#: includes/class-admin.php:567
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-admin.php:580
+msgid "Test alert"
+msgstr ""
+
+#: includes/class-admin.php:581
+msgid "Nothing is wrong: this is a test."
+msgstr ""
+
+#: includes/class-admin.php:585
+msgid "No alert channel is set up."
+msgstr ""
+
+#: includes/class-admin.php:589
+msgid "sent"
+msgstr ""
+
+#: includes/class-admin.php:589
+msgid "failed"
+msgstr ""
+
+#. translators: 1: number of emails, 2: site name.
+#: includes/class-alerts.php:94
+#, php-format
+msgid "%1$d email could not be sent on %2$s"
+msgid_plural "%1$d emails could not be sent on %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: site name.
+#: includes/class-alerts.php:97
+#, php-format
+msgid "Test alert from Aluleth SMTP on %s"
+msgstr ""
+
+#. translators: 1: subject, 2: error.
+#: includes/class-alerts.php:102
+#, php-format
+msgid "Last one: “%1$s” · %2$s"
+msgstr ""
+
+#. translators: %s: link to the log.
+#: includes/class-alerts.php:105
+#, php-format
+msgid "Open the email log: %s"
+msgstr ""
+
+#: includes/class-blocklist.php:265
+msgid "Nothing"
+msgstr ""
+
+#: includes/class-blocklist.php:268
+msgid "Everything except marketing emails"
+msgstr ""
+
+#: includes/class-blocklist.php:270
+msgid "Everything (only marked)"
+msgstr ""
+
+#: includes/class-blocklist.php:281
+msgid "Hard bounce"
+msgstr ""
+
+#: includes/class-blocklist.php:282
+msgid "Soft bounces"
+msgstr ""
+
+#: includes/class-blocklist.php:283
+#: includes/class-screens.php:104
+msgid "Spam report"
+msgstr ""
+
+#: includes/class-blocklist.php:284
+#: includes/class-screens-bounces.php:42
+msgid "Unsubscribed"
+msgstr ""
+
+#: includes/class-blocklist.php:285
+#: includes/class-screens-bounces.php:120
+msgid "Blocked by hand"
+msgstr ""
+
+#: includes/class-connections.php:284
+msgid "Choose an email service."
+msgstr ""
+
+#: includes/class-connections.php:288
+msgid "Enter the From email address, as it is set up at your email service."
+msgstr ""
+
+#. translators: %s: names of the empty fields.
+#: includes/class-connections.php:334
+#, php-format
+msgid "Fill in: %s."
+msgstr ""
+
+#: includes/class-connections.php:412
+#: includes/class-hooks.php:255
+msgid "This connection does not exist."
+msgstr ""
+
+#: includes/class-connections.php:416
+msgid "The saved key can no longer be read (the site’s secret keys changed). Paste it again."
+msgstr ""
+
+#: includes/class-deliverability.php:137
+msgid "Your own domain"
+msgstr ""
+
+#: includes/class-deliverability.php:138
+msgid "From address"
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:141
+#, php-format
+msgid "Addresses at %s cannot send through an email service: their DMARC rule makes Gmail, Yahoo and Microsoft refuse or hide these emails. Use an address of your own domain as the From address."
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:160
+#: includes/class-deliverability.php:162
+#: includes/class-deliverability.php:164
+msgid "Your domain matches the signature"
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:160
+#: includes/class-deliverability.php:162
+#: includes/class-deliverability.php:164
+msgid "Alignment"
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:160
+#, php-format
+msgid "The From address and the DKIM signature both use %s, as Gmail, Yahoo and Microsoft ask."
+msgstr ""
+
+#: includes/class-deliverability.php:162
+msgid "At least one connection does not sign with your domain yet, so its emails do not pass DMARC. Authenticate the domain at that service (see DKIM above)."
+msgstr ""
+
+#: includes/class-deliverability.php:164
+msgid "Could not be checked here. Send a check email to a Gmail address, open it and choose “Show original”: SPF, DKIM and DMARC should say PASS."
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:207
+#, php-format
+msgid "DNS · TXT on %s"
+msgstr ""
+
+#: includes/class-deliverability.php:217
+msgid "This server cannot look up DNS records. Check with your DNS host or an online SPF checker."
+msgstr ""
+
+#: includes/class-deliverability.php:237
+msgid "No SPF record. Gmail and Yahoo ask for SPF or DKIM on every email, and both for senders of many emails. At your DNS host, add a TXT record on the domain itself with this value (add your other senders, like your mailbox provider, before ~all):"
+msgstr ""
+
+#: includes/class-deliverability.php:240
+msgid "Two SPF records: inboxes then ignore both. Merge them into one TXT record."
+msgstr ""
+
+#: includes/class-deliverability.php:245
+msgid "The record ends with “+all”: anyone may send in your name. Replace it with “~all”."
+msgstr ""
+
+#. translators: %d: number of DNS lookups.
+#: includes/class-deliverability.php:249
+#, php-format
+msgid "The record needs %d DNS lookups; the limit is 10, after which SPF fails. Remove the services you no longer use."
+msgstr ""
+
+#: includes/class-deliverability.php:257
+msgid "Found, with one record and few enough lookups."
+msgstr ""
+
+#. translators: %s: names of services.
+#: includes/class-deliverability.php:260
+#, php-format
+msgid "Not listed: %s. That is fine when the service signs with DKIM for your domain (it usually checks SPF on its own bounce address)."
+msgstr ""
+
+#. translators: %s: connection name.
+#: includes/class-deliverability.php:304
+#, php-format
+msgid "DKIM · %s"
+msgstr ""
+
+#. translators: 1: service name, 2: domain.
+#: includes/class-deliverability.php:308
+#: includes/class-deliverability.php:312
+msgid "From the service"
+msgstr ""
+
+#. translators: 1: service name, 2: domain.
+#: includes/class-deliverability.php:308
+#, php-format
+msgid "%1$s signs your emails for %2$s."
+msgstr ""
+
+#. translators: 1: service name, 2: domain.
+#: includes/class-deliverability.php:312
+#, php-format
+msgid "%1$s does not sign for %2$s yet. In %1$s, authenticate the domain: it gives the DNS records to add at your DNS host."
+msgstr ""
+
+#. translators: %s: DKIM selectors.
+#: includes/class-deliverability.php:329
+msgid "DNS"
+msgstr ""
+
+#. translators: %s: DKIM selectors.
+#: includes/class-deliverability.php:329
+#, php-format
+msgid "A DKIM key is published (%s). The key could not confirm with the service that it is the one in use: a check email tells for sure."
+msgstr ""
+
+#: includes/class-deliverability.php:331
+#: includes/class-screens-deliverability.php:95
+#: includes/class-screens.php:333
+#: includes/class-screens.php:441
+msgid "Not checked"
+msgstr ""
+
+#: includes/class-deliverability.php:331
+msgid "The key cannot read the domain settings at the service, and no usual DKIM record was found. Check in the service that the domain is authenticated, or send a check email."
+msgstr ""
+
+#. translators: %s: DNS name.
+#: includes/class-deliverability.php:353
+#, php-format
+msgid "DNS · %s"
+msgstr ""
+
+#: includes/class-deliverability.php:355
+#: includes/class-deliverability.php:441
+msgid "This server cannot look up DNS records."
+msgstr ""
+
+#: includes/class-deliverability.php:359
+msgid "No DMARC record. Gmail and Yahoo require one from senders of many emails, and inboxes trust domains that have one. At your DNS host, add a TXT record named _dmarc with this value:"
+msgstr ""
+
+#: includes/class-deliverability.php:365
+msgid "Set to “none”: inboxes report problems but do nothing about emails sent in your name. Every connection signs with your domain, so you can move to “quarantine”: replace the value with"
+msgstr ""
+
+#: includes/class-deliverability.php:367
+msgid "Present, set to “none” (watch only). Keep it so until every connection signs with your domain, then move to “quarantine”."
+msgstr ""
+
+#. translators: %s: DMARC policy.
+#: includes/class-deliverability.php:370
+#, php-format
+msgid "Present, set to “%s”: your domain is protected from people sending in your name."
+msgstr ""
+
+#. translators: 1: spam reports, 2: delivered emails.
+#: includes/class-deliverability.php:402
+#, php-format
+msgid "%1$d report out of %2$d delivered emails: too few emails to judge the rate yet."
+msgid_plural "%1$d reports out of %2$d delivered emails: too few emails to judge the rate yet."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: rate in percent, 2: number of reports.
+#: includes/class-deliverability.php:407
+#, php-format
+msgid "%1$s of delivered emails (%2$d report). Gmail and Yahoo ask to stay under 0.3%%, ideally under 0.1%%."
+msgid_plural "%1$s of delivered emails (%2$d reports). Gmail and Yahoo ask to stay under 0.3%%, ideally under 0.1%%."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-deliverability.php:409
+#: includes/class-screens-bounces.php:41
+#: includes/class-screens.php:236
+msgid "Spam reports"
+msgstr ""
+
+#: includes/class-deliverability.php:409
+#: includes/class-deliverability.php:422
+#: includes/class-deliverability.php:425
+msgid "Last 30 days"
+msgstr ""
+
+#. translators: 1: bounces, 2: sent emails.
+#: includes/class-deliverability.php:415
+#, php-format
+msgid "%1$d bounce out of %2$d sent emails: too few emails to judge the rate yet. Bounced addresses are blocked at once."
+msgid_plural "%1$d bounces out of %2$d sent emails: too few emails to judge the rate yet. Bounced addresses are blocked at once."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: rate in percent, 2: number of bounces.
+#: includes/class-deliverability.php:420
+#, php-format
+msgid "%1$s of sent emails (%2$d address that does not exist). Bounced addresses are blocked at once, so this stays low."
+msgid_plural "%1$s of sent emails (%2$d addresses that do not exist). Bounced addresses are blocked at once, so this stays low."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-deliverability.php:422
+#: includes/class-screens.php:53
+#: includes/class-screens.php:426
+msgid "Bounces"
+msgstr ""
+
+#: includes/class-deliverability.php:425
+msgid "Spam reports and bounces"
+msgstr ""
+
+#: includes/class-deliverability.php:425
+msgid "No events from your services yet. Set up “Bounces and spam reports” on each connection to see these numbers."
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-deliverability.php:439
+#, php-format
+msgid "DNS · MX on %s"
+msgstr ""
+
+#. translators: %s: mail servers.
+#: includes/class-deliverability.php:441
+#: includes/class-deliverability.php:444
+#: includes/class-deliverability.php:448
+msgid "Replies can come back"
+msgstr ""
+
+#: includes/class-deliverability.php:444
+msgid "The domain receives no email (no MX record): replies to your emails get lost, and some inboxes distrust such senders."
+msgstr ""
+
+#. translators: %s: mail servers.
+#: includes/class-deliverability.php:448
+#, php-format
+msgid "The domain receives email (%s)."
+msgstr ""
+
+#: includes/class-hooks.php:259
+msgid "This service has no way to add the address for you: follow the steps."
+msgstr ""
+
+#. translators: %d: number of other recipients.
+#: includes/class-log.php:123
+#, php-format
+msgid "and %d more"
+msgid_plural "and %d more"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-message.php:437
+msgid "link hidden in the log"
+msgstr ""
+
+#: includes/class-message.php:455
+#: includes/class-message.php:456
+#: includes/class-message.php:458
+msgid "hidden"
+msgstr ""
+
+#: includes/class-migrate.php:78
+msgid "already imported."
+msgstr ""
+
+#. translators: %s: names of settings.
+#: includes/class-migrate.php:86
+#, php-format
+msgid "could not read: %s (kept in wp-config.php or another place). Add this connection by hand."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-migrate.php:341
+#, php-format
+msgid "FluentSMTP: %s"
+msgstr ""
+
+#: includes/class-oauth.php:108
+msgid "This connection does not sign in."
+msgstr ""
+
+#: includes/class-oauth.php:112
+msgid "Paste the client ID and secret first, then save."
+msgstr ""
+
+#: includes/class-oauth.php:148
+msgid "This sign-in link is not valid any more. Click the sign-in button again."
+msgstr ""
+
+#. translators: %s: error from the service.
+#: includes/class-oauth.php:158
+#, php-format
+msgid "Sign-in cancelled or refused: %s"
+msgstr ""
+
+#. translators: %s: error from the service.
+#: includes/class-oauth.php:158
+msgid "no code received."
+msgstr ""
+
+#. translators: %s: error from the service.
+#: includes/class-oauth.php:163
+#, php-format
+msgid "The service refused the sign-in: %s"
+msgstr ""
+
+#: includes/class-oauth.php:175
+#: includes/class-screens.php:513
+msgid "your account"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-oauth.php:177
+#, php-format
+msgid "Signed in as %s. Send a test email to be sure."
+msgstr ""
+
+#: includes/class-oauth.php:179
+msgid "Signed in."
+msgstr ""
+
+#: includes/class-oauth.php:199
+msgid "Signed out. Emails cannot go through this connection until you sign in again."
+msgstr ""
+
+#: includes/class-plugin.php:81
+msgid "Aluleth SMTP: connections, settings and the email log"
+msgstr ""
+
+#: includes/class-plugin.php:82
+msgid "Deleted with the plugin."
+msgstr ""
+
+#: includes/class-plugin.php:94
+#: includes/class-screens-bounces.php:217
+msgid "Set up"
+msgstr ""
+
+#: includes/class-plugin.php:106
+#: includes/class-plugin.php:120
+msgid "Aluleth SMTP email log"
+msgstr ""
+
+#: includes/class-plugin.php:140
+msgid "Emails sent to you"
+msgstr ""
+
+#: includes/class-plugin.php:144
+msgid "Date"
+msgstr ""
+
+#: includes/class-plugin.php:148
+msgid "Subject"
+msgstr ""
+
+#: includes/class-plugin.php:152
+#: includes/class-screens.php:927
+msgid "Status"
+msgstr ""
+
+#: includes/class-provider-brevo.php:41
+msgid "API · free plan available"
+msgstr ""
+
+#: includes/class-provider-brevo.php:50
+msgid "In Brevo › SMTP & API › API keys, create a key and paste it here. The From address must be a sender or a domain validated in Brevo."
+msgstr ""
+
+#: includes/class-provider-brevo.php:70
+#: includes/class-provider-elasticemail.php:61
+#: includes/class-provider-mailgun.php:70
+#: includes/class-provider-mailjet.php:61
+#: includes/class-provider-resend.php:70
+#: includes/class-provider-sendgrid.php:70
+#: includes/class-provider-smtp2go.php:61
+#: includes/class-provider-sparkpost.php:70
+msgid "API key"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-provider-brevo.php:164
+#, php-format
+msgid "The key works, but %s is not a validated sender in Brevo: Brevo would accept the emails, then reject them. Add it in Brevo › Senders, domains & dedicated IPs, or authenticate its domain."
+msgstr ""
+
+#. translators: %s: email addresses.
+#: includes/class-provider-brevo.php:167
+#, php-format
+msgid "Validated senders: %s."
+msgstr ""
+
+#: includes/class-provider-brevo.php:186
+msgid "Or by hand: in Brevo, open the webhooks of transactional emails, add one with this address and tick Delivered, Hard bounce, Soft bounce, Blocked, Spam (complaint), Invalid email, Deferred and Error."
+msgstr ""
+
+#: includes/class-provider-elasticemail.php:41
+msgid "In Elastic Email › Settings › Manage API keys, create a key that can send emails and paste it here."
+msgstr ""
+
+#: includes/class-provider-elasticemail.php:145
+msgid "In Elastic Email › Settings › Notifications (webhooks), add a webhook with this address and tick Sent, Bounce/Error, Abuse report and Unsubscribed."
+msgstr ""
+
+#: includes/class-provider-gmail.php:32
+msgid "Gmail / Google Workspace"
+msgstr ""
+
+#: includes/class-provider-gmail.php:41
+msgid "Sign in with Google"
+msgstr ""
+
+#: includes/class-provider-gmail.php:50
+msgid "Gmail sends from your own Google account through the Gmail API. You make a small app in Google Cloud once (steps below), paste its Client ID and secret here, then sign in. Gmail limits sending to about 500 emails a day (2,000 with Google Workspace): set that limit below."
+msgstr ""
+
+#: includes/class-provider-gmail.php:69
+msgid "In console.cloud.google.com, create a project (or pick one), then in APIs & Services › Library, enable the Gmail API."
+msgstr ""
+
+#: includes/class-provider-gmail.php:70
+msgid "In Google Auth Platform (OAuth consent screen), fill in the app name and your email. Audience: “Internal” with Google Workspace; otherwise “External”, then click “Publish app” (In production): an app left in “Testing” stops working after 7 days."
+msgstr ""
+
+#: includes/class-provider-gmail.php:71
+msgid "In Clients, create a client of type “Web application” and add the address below as an authorized redirect URI."
+msgstr ""
+
+#: includes/class-provider-gmail.php:72
+msgid "Copy the Client ID and the Client secret here, save, then click “Sign in with Google”. Google may warn that the app is not verified: it is your own app, choose Continue."
+msgstr ""
+
+#: includes/class-provider-gmail.php:84
+msgid "Client ID"
+msgstr ""
+
+#: includes/class-provider-gmail.php:91
+msgid "Client secret"
+msgstr ""
+
+#: includes/class-provider-mailersend.php:41
+msgid "In MailerSend › Integrations › API tokens, create a token with “Email” full access and paste it here."
+msgstr ""
+
+#: includes/class-provider-mailersend.php:61
+msgid "API token"
+msgstr ""
+
+#: includes/class-provider-mailersend.php:154
+msgid "Or by hand: in MailerSend › Domains › your domain › Webhooks, add a webhook with this address and tick Delivered, Soft bounced, Hard bounced, Spam complaint, Suppressed and Deferred. Paste its signing secret below."
+msgstr ""
+
+#: includes/class-provider-mailersend.php:164
+msgid "Signing secret"
+msgstr ""
+
+#: includes/class-provider-mailersend.php:165
+msgid "On the webhook page in MailerSend. With it, only MailerSend can send events here."
+msgstr ""
+
+#: includes/class-provider-mailersend.php:262
+msgid "This MailerSend token cannot read your domains. Add the address by hand, or give the token access to Domains and Webhooks."
+msgstr ""
+
+#: includes/class-provider-mailersend.php:265
+msgid "The domain of the From address is not in this MailerSend account."
+msgstr ""
+
+#: includes/class-provider-mailersend.php:281
+msgid "This MailerSend token cannot add webhooks. Add the address by hand, or give the token “Webhooks: full access”."
+msgstr ""
+
+#: includes/class-provider-mailgun.php:41
+#: includes/class-provider-sparkpost.php:41
+msgid "API · US or EU"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:50
+msgid "In Mailgun › Sending › Domain settings › Sending API keys, create a key for your sending domain, then write that domain below."
+msgstr ""
+
+#: includes/class-provider-mailgun.php:75
+#: includes/class-screens-deliverability.php:41
+#: includes/class-screens-deliverability.php:61
+msgid "Sending domain"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:81
+#: includes/class-provider-sendgrid.php:75
+#: includes/class-provider-sparkpost.php:75
+msgid "Data region"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:84
+msgid "US (api.mailgun.net)"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:85
+msgid "EU (api.eu.mailgun.net)"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:195
+msgid "Or by hand: in Mailgun › Sending › Webhooks, choose your domain and add this address for Delivered, Permanent failure, Temporary failure and Spam complaints. Paste the HTTP webhook signing key below."
+msgstr ""
+
+#: includes/class-provider-mailgun.php:205
+msgid "HTTP webhook signing key"
+msgstr ""
+
+#: includes/class-provider-mailgun.php:206
+msgid "In Mailgun › API Security (or Sending › Webhooks). With it, only Mailgun can send events here."
+msgstr ""
+
+#: includes/class-provider-mailgun.php:304
+msgid "This Mailgun key cannot add webhooks (a sending key of one domain cannot). Add the address by hand, or use an account API key."
+msgstr ""
+
+#. translators: %s: event name.
+#: includes/class-provider-mailgun.php:308
+#, php-format
+msgid "Mailgun already has a webhook for “%s” on this domain. Add this address next to it by hand."
+msgstr ""
+
+#: includes/class-provider-mailjet.php:41
+msgid "In Mailjet › Account settings › API key management, copy the API key and the secret key."
+msgstr ""
+
+#: includes/class-provider-mailjet.php:66
+msgid "Secret key"
+msgstr ""
+
+#: includes/class-provider-mailjet.php:171
+msgid "Or by hand: in Mailjet › Account settings › Event notifications (webhooks), paste this address for Sent, Bounce, Blocked and Spam."
+msgstr ""
+
+#. translators: %s: event name.
+#: includes/class-provider-mailjet.php:248
+#, php-format
+msgid "Mailjet already sends “%s” events to another address. Replace it by hand with this one."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:32
+msgid "Microsoft 365 / Outlook"
+msgstr ""
+
+#: includes/class-provider-microsoft.php:41
+msgid "Sign in with Microsoft"
+msgstr ""
+
+#: includes/class-provider-microsoft.php:50
+msgid "Microsoft 365 or Outlook.com sends from your own mailbox through Microsoft Graph. You register a small app in Microsoft Entra once (steps below), paste its Application (client) ID and a client secret here, then sign in. Attachments are limited to about 3 MB per email."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:69
+msgid "In entra.microsoft.com › App registrations, click “New registration”. Who can use it: your organization only for Microsoft 365, or “any organization and personal accounts” for Outlook.com. Redirect URI: platform “Web”, with the address below."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:70
+msgid "Copy the “Application (client) ID” here. For a Microsoft 365 app limited to your organization, also copy the “Directory (tenant) ID” in the Tenant field."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:71
+msgid "In Certificates & secrets, add a client secret and copy its Value here (not its ID). Note its end date: create a new one before it expires."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:72
+msgid "In API permissions, add Microsoft Graph › Delegated: Mail.Send, offline_access and User.Read (grant admin consent if your organization asks). Save here, then click “Sign in with Microsoft”."
+msgstr ""
+
+#: includes/class-provider-microsoft.php:84
+msgid "Application (client) ID"
+msgstr ""
+
+#: includes/class-provider-microsoft.php:90
+msgid "Client secret (Value)"
+msgstr ""
+
+#: includes/class-provider-microsoft.php:95
+msgid "Tenant"
+msgstr ""
+
+#: includes/class-provider-microsoft.php:99
+msgid "“common” for most cases; your Directory (tenant) ID for an app limited to your organization; “consumers” for Outlook.com only."
+msgstr ""
+
+#: includes/class-provider-oauth.php:63
+msgid "Sign in, your own app"
+msgstr ""
+
+#: includes/class-provider-oauth.php:72
+msgid "The address of the account you sign in with, or an address it may send as (an alias)."
+msgstr ""
+
+#: includes/class-provider-oauth.php:81
+msgid "This service does not report deliveries to other apps: bounces come back as emails to the mailbox you sign in with."
+msgstr ""
+
+#: includes/class-provider-oauth.php:183
+msgid "The service gave no lasting access. Remove this site from the app’s access in your account, then connect again."
+msgstr ""
+
+#. translators: %s: button name.
+#: includes/class-provider-oauth.php:202
+#, php-format
+msgid "Not signed in yet: open the connection and click “%s”."
+msgstr ""
+
+#. translators: 1: error, 2: button name.
+#: includes/class-provider-oauth.php:226
+#, php-format
+msgid "The sign-in is no longer valid (%1$s). Open the connection and click “%2$s” again."
+msgstr ""
+
+#. translators: %s: button name.
+#: includes/class-provider-oauth.php:282
+#, php-format
+msgid "Saved. Now click “%s” below to sign in."
+msgstr ""
+
+#. translators: 1: account address, 2: From address.
+#: includes/class-provider-oauth.php:292
+#, php-format
+msgid "Signed in as %1$s, but the From address is %2$s. It works only if %2$s is an address this account may send as (an alias); otherwise use %1$s."
+msgstr ""
+
+#: includes/class-provider-postmark.php:41
+msgid "API · fast receipts"
+msgstr ""
+
+#: includes/class-provider-postmark.php:50
+msgid "In Postmark, open your server › API Tokens and copy the Server API token. Marketing emails can use a broadcast stream."
+msgstr ""
+
+#: includes/class-provider-postmark.php:70
+msgid "Server API token"
+msgstr ""
+
+#: includes/class-provider-postmark.php:75
+msgid "Message stream"
+msgstr ""
+
+#: includes/class-provider-postmark.php:80
+msgid "Stream for marketing emails (optional)"
+msgstr ""
+
+#: includes/class-provider-postmark.php:153
+msgid "Postmark: this address is inactive (it bounced or marked an email as spam)."
+msgstr ""
+
+#: includes/class-provider-postmark.php:183
+msgid "Or by hand: in Postmark, open your server › your message stream › Webhooks, add a webhook with this address and tick Delivery, Bounce and Spam complaint."
+msgstr ""
+
+#: includes/class-provider-resend.php:41
+msgid "API · developer friendly"
+msgstr ""
+
+#: includes/class-provider-resend.php:50
+msgid "In Resend › API Keys, create a key (“Sending access” is enough) and paste it here. Your domain must be verified in Resend."
+msgstr ""
+
+#: includes/class-provider-resend.php:173
+msgid "Or by hand: in Resend › Webhooks, add an endpoint with this address and tick email.delivered, email.bounced, email.complained, email.failed, email.suppressed and email.delivery_delayed. Paste its signing secret below."
+msgstr ""
+
+#: includes/class-provider-resend.php:183
+msgid "Signing secret (whsec_…)"
+msgstr ""
+
+#: includes/class-provider-resend.php:184
+msgid "On the webhook page in Resend. With it, only Resend can send events here."
+msgstr ""
+
+#: includes/class-provider-resend.php:282
+msgid "This Resend key can only send. Add the address by hand, or use a key with “Full access” once to add it."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:41
+msgid "API · global or EU"
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:50
+msgid "In SendGrid › Settings › API Keys, create a key with “Mail Send” access and paste it here."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:78
+msgid "Global"
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:79
+msgid "EU (sendgrid.eu)"
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:181
+msgid "This key cannot send mail. In SendGrid, give it “Mail Send” access."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:200
+msgid "Or by hand: in SendGrid › Settings › Mail Settings › Event Webhooks, create a webhook with this address and tick Delivered, Bounced, Dropped, Deferred and Spam reports. Then turn on Signature verification and paste the verification key below."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:210
+msgid "Verification key (signed webhook)"
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:211
+msgid "Shown in SendGrid when Signature verification is on. With it, only SendGrid can send events here."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:306
+msgid "This SendGrid key cannot add webhooks (it only sends). Add the address by hand, or give the key access to Mail Settings and try again."
+msgstr ""
+
+#: includes/class-provider-sendgrid.php:356
+msgid "In SendGrid › Settings › Mail Settings › Event Webhooks, remove one you no longer need, then click this button again. Emails are sent anyway; only delivery and bounce reports are missing."
+msgstr ""
+
+#. translators: 1: number of webhooks, 2: addresses.
+#: includes/class-provider-sendgrid.php:359
+#, php-format
+msgid "Your SendGrid plan allows %1$d event webhook and it is already used by %2$s."
+msgid_plural "Your SendGrid plan allows %1$d event webhooks and they are all used by %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-provider-sendgrid.php:361
+msgid "Your SendGrid plan has no free event webhook left."
+msgstr ""
+
+#: includes/class-provider-ses.php:46
+msgid "API · pay as you go"
+msgstr ""
+
+#: includes/class-provider-ses.php:55
+msgid "In AWS › IAM, create a user with the “ses:SendEmail” and “ses:SendRawEmail” rights (and “ses:GetAccount” for the check), then an access key for it. Choose the region where your domain is verified in SES."
+msgstr ""
+
+#: includes/class-provider-ses.php:75
+msgid "Access key ID"
+msgstr ""
+
+#: includes/class-provider-ses.php:80
+msgid "Secret access key"
+msgstr ""
+
+#: includes/class-provider-ses.php:85
+msgid "Region"
+msgstr ""
+
+#: includes/class-provider-ses.php:90
+msgid "Configuration set (optional)"
+msgstr ""
+
+#. translators: %s: error text from Amazon SES.
+#: includes/class-provider-ses.php:166
+#, php-format
+msgid "Amazon SES: %s (while your account is in the sandbox, recipients must be verified too)."
+msgstr ""
+
+#: includes/class-provider-ses.php:184
+msgid "The keys work, but this Amazon SES account is still in the sandbox: it can only send to verified addresses. Ask AWS for production access."
+msgstr ""
+
+#: includes/class-provider-ses.php:256
+msgid "In AWS › Amazon SNS, create a Standard topic in the same region and add an HTTPS subscription with this address (it is confirmed automatically; leave raw message delivery off). Then in Amazon SES › Identities › your domain › Notifications, send Bounce, Complaint and Delivery feedback to this topic."
+msgstr ""
+
+#: includes/class-provider-smtp.php:34
+msgid "Other SMTP"
+msgstr ""
+
+#: includes/class-provider-smtp.php:43
+msgid "Host, port, login"
+msgstr ""
+
+#: includes/class-provider-smtp.php:52
+msgid "Your email service or host gives these settings. Port 587 with TLS is the usual choice; 465 uses SSL."
+msgstr ""
+
+#: includes/class-provider-smtp.php:63
+msgid "SMTP host"
+msgstr ""
+
+#: includes/class-provider-smtp.php:69
+msgid "Port"
+msgstr ""
+
+#: includes/class-provider-smtp.php:75
+msgid "Encryption"
+msgstr ""
+
+#: includes/class-provider-smtp.php:78
+msgid "TLS (port 587)"
+msgstr ""
+
+#: includes/class-provider-smtp.php:79
+msgid "SSL (port 465)"
+msgstr ""
+
+#: includes/class-provider-smtp.php:80
+msgid "None (not recommended)"
+msgstr ""
+
+#: includes/class-provider-smtp.php:84
+msgid "Username"
+msgstr ""
+
+#: includes/class-provider-smtp.php:88
+msgid "Password"
+msgstr ""
+
+#: includes/class-provider-smtp2go.php:41
+msgid "In SMTP2GO › Sending › API Keys, create a key that can send emails and paste it here."
+msgstr ""
+
+#: includes/class-provider-smtp2go.php:164
+msgid "Or by hand: in SMTP2GO › Reports › Webhooks (or Settings › Webhooks), add this address, choose JSON and tick Delivered, Bounce, Spam and Reject."
+msgstr ""
+
+#: includes/class-provider-smtp2go.php:238
+msgid "This SMTP2GO key cannot add webhooks. Add the address by hand, or allow the webhook endpoints on the key."
+msgstr ""
+
+#: includes/class-provider-sparkpost.php:50
+msgid "In SparkPost › Configuration › API Keys, create a key with “Transmissions: Read/Write” and paste it here."
+msgstr ""
+
+#: includes/class-provider-sparkpost.php:78
+msgid "US (sparkpost.com)"
+msgstr ""
+
+#: includes/class-provider-sparkpost.php:79
+msgid "EU (eu.sparkpost.com)"
+msgstr ""
+
+#: includes/class-provider-sparkpost.php:193
+msgid "Or by hand: in SparkPost › Configuration › Webhooks, add a webhook with this address, no authentication, and the events Delivery, Bounce, Out of band, Spam complaint, Policy rejection and Delay."
+msgstr ""
+
+#. translators: %d: SparkPost bounce class number.
+#: includes/class-provider-sparkpost.php:251
+#, php-format
+msgid "class %d"
+msgstr ""
+
+#: includes/class-provider-sparkpost.php:288
+msgid "This SparkPost key cannot add webhooks. Add the address by hand, or give the key “Event Webhooks: Read/Write”."
+msgstr ""
+
+#: includes/class-provider.php:37
+msgid "API"
+msgstr ""
+
+#: includes/class-provider.php:103
+msgid "An address of a domain verified at the service."
+msgstr ""
+
+#: includes/class-provider.php:112
+msgid "An SMTP server does not report what happens after sending. Use an email service with an API to see delivered emails, bounces and spam reports."
+msgstr ""
+
+#: includes/class-provider.php:176
+msgid "Add the address in your account at the service."
+msgstr ""
+
+#. translators: %s: error from the network.
+#: includes/class-provider.php:387
+#, php-format
+msgid "Could not reach the service: %s"
+msgstr ""
+
+#. translators: %s: error text from the service.
+#: includes/class-provider.php:398
+#, php-format
+msgid "The service refused the key: %s"
+msgstr ""
+
+#: includes/class-provider.php:429
+msgid "No details from the service."
+msgstr ""
+
+#: includes/class-queue.php:80
+msgid "Every minute (Aluleth SMTP queue)"
+msgstr ""
+
+#: includes/class-queue.php:221
+msgid "The email was not kept, it cannot be sent."
+msgstr ""
+
+#: includes/class-router.php:160
+msgid "Theme"
+msgstr ""
+
+#: includes/class-router.php:161
+msgid "Must-use plugin"
+msgstr ""
+
+#: includes/class-router.php:162
+msgid "Test email"
+msgstr ""
+
+#: includes/class-router.php:179
+msgid "Unknown"
+msgstr ""
+
+#: includes/class-screens-bounces.php:36
+msgid "Bounces and blocked addresses"
+msgstr ""
+
+#: includes/class-screens-bounces.php:36
+msgid "One list for the whole site: Aluleth Forms, Popups and the other Aluleth plugins skip these addresses too."
+msgstr ""
+
+#: includes/class-screens-bounces.php:39
+msgid "Blocked now"
+msgstr ""
+
+#: includes/class-screens-bounces.php:39
+msgid "checked before each email"
+msgstr ""
+
+#: includes/class-screens-bounces.php:40
+msgid "Hard bounces"
+msgstr ""
+
+#: includes/class-screens-bounces.php:40
+msgid "the address does not exist"
+msgstr ""
+
+#: includes/class-screens-bounces.php:41
+msgid "marketing stopped at once"
+msgstr ""
+
+#: includes/class-screens-bounces.php:42
+msgid "no marketing emails"
+msgstr ""
+
+#: includes/class-screens-bounces.php:45
+msgid "Soft bounces and by hand"
+msgstr ""
+
+#: includes/class-screens-bounces.php:45
+msgid "too many soft bounces, or blocked by you"
+msgstr ""
+
+#: includes/class-screens-bounces.php:54
+msgid "Blocked addresses"
+msgstr ""
+
+#: includes/class-screens-bounces.php:57
+msgid "Address to block"
+msgstr ""
+
+#: includes/class-screens-bounces.php:57
+msgid "name@example.com"
+msgstr ""
+
+#: includes/class-screens-bounces.php:57
+msgid "Block an address"
+msgstr ""
+
+#: includes/class-screens-bounces.php:58
+#: includes/class-screens.php:895
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-screens-bounces.php:62
+msgid "Search an address"
+msgstr ""
+
+#: includes/class-screens-bounces.php:63
+#: includes/class-screens-bounces.php:72
+msgid "Why"
+msgstr ""
+
+#: includes/class-screens-bounces.php:63
+msgid "Every reason"
+msgstr ""
+
+#: includes/class-screens-bounces.php:67
+#: includes/class-screens.php:887
+msgid "Filter"
+msgstr ""
+
+#: includes/class-screens-bounces.php:70
+msgid "No address matches."
+msgstr ""
+
+#: includes/class-screens-bounces.php:70
+msgid "No blocked address. When a service reports a bounce or a spam report, the address appears here and stops getting emails it should not get."
+msgstr ""
+
+#: includes/class-screens-bounces.php:72
+msgid "Address"
+msgstr ""
+
+#: includes/class-screens-bounces.php:72
+msgid "What they still get"
+msgstr ""
+
+#: includes/class-screens-bounces.php:72
+msgid "Since"
+msgstr ""
+
+#: includes/class-screens-bounces.php:72
+msgid "Action"
+msgstr ""
+
+#: includes/class-screens-bounces.php:77
+msgid "Contact"
+msgstr ""
+
+#: includes/class-screens-bounces.php:81
+msgid "Allow again"
+msgstr ""
+
+#: includes/class-screens-bounces.php:81
+msgid "Send emails to this address again?"
+msgstr ""
+
+#: includes/class-screens-bounces.php:87
+#: includes/class-screens.php:948
+msgid "Pages"
+msgstr ""
+
+#: includes/class-screens-bounces.php:123
+msgid "Imported"
+msgstr ""
+
+#: includes/class-screens-bounces.php:136
+msgid "What happens after a bounce"
+msgstr ""
+
+#: includes/class-screens-bounces.php:140
+msgid "Address does not exist (hard bounce)"
+msgstr ""
+
+#: includes/class-screens-bounces.php:142
+msgid "Block, except passwords and orders"
+msgstr ""
+
+#: includes/class-screens-bounces.php:143
+#: includes/class-screens-bounces.php:159
+msgid "Block everything"
+msgstr ""
+
+#: includes/class-screens-bounces.php:144
+msgid "Only show it here"
+msgstr ""
+
+#: includes/class-screens-bounces.php:148
+msgid "Mailbox full or server down (soft bounce)"
+msgstr ""
+
+#: includes/class-screens-bounces.php:150
+msgid "Block marketing after 3 in 15 days"
+msgstr ""
+
+#: includes/class-screens-bounces.php:151
+msgid "Block marketing after 5 in 30 days"
+msgstr ""
+
+#: includes/class-screens-bounces.php:152
+msgid "Never block"
+msgstr ""
+
+#: includes/class-screens-bounces.php:156
+msgid "Marked as spam"
+msgstr ""
+
+#: includes/class-screens-bounces.php:158
+msgid "Stop all marketing at once"
+msgstr ""
+
+#: includes/class-screens-bounces.php:170
+msgid "Unsubscribed addresses never get marketing emails. When the address is a contact, its page in Aluleth › Contacts shows the bounce or the spam report."
+msgstr ""
+
+#: includes/class-screens-bounces.php:171
+msgid "Save the rules"
+msgstr ""
+
+#: includes/class-screens-bounces.php:180
+msgid "Where bounces come from"
+msgstr ""
+
+#. translators: %s: time ago.
+#: includes/class-screens-bounces.php:193
+#, php-format
+msgid "Last event %s ago"
+msgstr ""
+
+#: includes/class-screens-bounces.php:194
+#: includes/class-screens-bounces.php:239
+#: includes/class-screens.php:331
+#: includes/class-screens.php:438
+msgid "Working"
+msgstr ""
+
+#: includes/class-screens-bounces.php:197
+msgid "Set up, no event yet"
+msgstr ""
+
+#: includes/class-screens-bounces.php:198
+#: includes/class-screens.php:119
+#: includes/class-screens.php:225
+#: includes/class-screens.php:450
+#: includes/class-screens.php:902
+msgid "Waiting"
+msgstr ""
+
+#: includes/class-screens-bounces.php:201
+msgid "Not set up yet"
+msgstr ""
+
+#: includes/class-screens-bounces.php:202
+#: includes/class-screens.php:451
+msgid "To set up"
+msgstr ""
+
+#: includes/class-screens-bounces.php:205
+msgid "This service sends no events"
+msgstr ""
+
+#: includes/class-screens-bounces.php:206
+msgid "None"
+msgstr ""
+
+#: includes/class-screens-bounces.php:217
+msgid "Settings"
+msgstr ""
+
+#: includes/class-screens-bounces.php:232
+msgid "Bounces and spam reports"
+msgstr ""
+
+#: includes/class-screens-bounces.php:240
+msgid "Waiting for the first event"
+msgstr ""
+
+#: includes/class-screens-bounces.php:241
+msgid "Not set up"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-screens-bounces.php:245
+#, php-format
+msgid "%s tells this site which emails were delivered, which bounced and who marked one as spam. Bounced addresses are then blocked by the rules in Bounces, and the log shows what happened to each email."
+msgstr ""
+
+#. translators: %s: time ago.
+#: includes/class-screens-bounces.php:248
+#, php-format
+msgid "Last event received %s ago."
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-screens-bounces.php:253
+msgid "Set it up again"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-screens-bounces.php:253
+#, php-format
+msgid "Set it up in %s for me"
+msgstr ""
+
+#: includes/class-screens-bounces.php:258
+msgid "Save the connection once more to get its event address."
+msgstr ""
+
+#: includes/class-screens-bounces.php:260
+msgid "Address for the service (secret: anyone with it can send events)"
+msgstr ""
+
+#: includes/class-screens-bounces.php:260
+#: includes/class-screens.php:491
+msgid "Copy"
+msgstr ""
+
+#. translators: %s: last characters of the saved key.
+#: includes/class-screens-bounces.php:268
+#: includes/class-screens.php:659
+#, php-format
+msgid "Saved (%s). Leave empty to keep it."
+msgstr ""
+
+#: includes/class-screens-bounces.php:269
+msgid "Paste it here yourself. It is stored encrypted."
+msgstr ""
+
+#: includes/class-screens-bounces.php:270
+msgid "Save the signing key"
+msgstr ""
+
+#: includes/class-screens-bounces.php:272
+msgid "Remove it"
+msgstr ""
+
+#: includes/class-screens-bounces.php:278
+msgid "I added the address"
+msgstr ""
+
+#: includes/class-screens-bounces.php:280
+msgid "Make a new address"
+msgstr ""
+
+#: includes/class-screens-bounces.php:280
+msgid "The current address will stop working. Continue?"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:25
+#: includes/class-screens-deliverability.php:36
+#: includes/class-screens-deliverability.php:54
+msgid "Will your emails reach the inbox?"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:26
+msgid "Add a connection first: the checks look at the domain of its From address."
+msgstr ""
+
+#: includes/class-screens-deliverability.php:37
+msgid "Check your sending domain against the rules of Gmail, Yahoo and Microsoft: SPF, DKIM, DMARC and their alignment, the MX records, the From address and your bounce and spam report rates."
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-screens-deliverability.php:50
+msgid "Check now"
+msgstr ""
+
+#. translators: %s: domain.
+#: includes/class-screens-deliverability.php:50
+#, php-format
+msgid "Check %s now"
+msgstr ""
+
+#. translators: 1: domain, 2: date and time.
+#: includes/class-screens-deliverability.php:56
+#, php-format
+msgid "Checked against the rules of Gmail, Yahoo and Microsoft for %1$s · %2$s"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:69
+msgid "Check again"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:76
+msgid "Not enough could be checked from here."
+msgstr ""
+
+#: includes/class-screens-deliverability.php:78
+msgid "Everything it looks at passes."
+msgstr ""
+
+#. translators: %s: name of a check.
+#: includes/class-screens-deliverability.php:81
+#, php-format
+msgid "To improve: %s"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:92
+msgid "Passes"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:93
+msgid "To improve"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:94
+#: includes/class-screens.php:327
+#: includes/class-screens.php:438
+msgid "Problem"
+msgstr ""
+
+#. translators: %s: name of a check.
+#: includes/class-screens-deliverability.php:111
+#, php-format
+msgid "Fix first: %s"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:112
+msgid "Copy the value"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:113
+msgid "DNS changes can take a few hours to show. Then click “Check again”."
+msgstr ""
+
+#: includes/class-screens-deliverability.php:117
+msgid "Send a check email"
+msgstr ""
+
+#: includes/class-screens-deliverability.php:117
+msgid "One email through each connection, to your own Gmail or Outlook address. Open it, choose “Show original” (Gmail) or “View source”, and look for SPF, DKIM and DMARC: PASS."
+msgstr ""
+
+#: includes/class-screens-deliverability.php:119
+#: includes/class-screens.php:383
+msgid "Send to"
+msgstr ""
+
+#. translators: %d: number of connections.
+#: includes/class-screens-deliverability.php:121
+#, php-format
+msgid "Send through %d connection"
+msgid_plural "Send through all %d connections"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-screens.php:44
+msgid "Sorry, you are not allowed to see this page."
+msgstr ""
+
+#: includes/class-screens.php:48
+msgid "Overview"
+msgstr ""
+
+#: includes/class-screens.php:49
+#: includes/class-screens.php:322
+#: includes/class-screens.php:413
+msgid "Connections"
+msgstr ""
+
+#: includes/class-screens.php:50
+msgid "Routing and queue"
+msgstr ""
+
+#: includes/class-screens.php:51
+#: includes/class-screens.php:880
+#: includes/class-screens.php:980
+msgid "Email log"
+msgstr ""
+
+#: includes/class-screens.php:52
+msgid "Deliverability"
+msgstr ""
+
+#: includes/class-screens.php:54
+#: includes/class-screens.php:1043
+msgid "Log and alerts"
+msgstr ""
+
+#: includes/class-screens.php:102
+#: includes/class-screens.php:229
+msgid "Delivered"
+msgstr ""
+
+#: includes/class-screens.php:103
+#: includes/class-screens.php:235
+#: includes/class-screens.php:904
+msgid "Bounced"
+msgstr ""
+
+#: includes/class-screens.php:105
+msgid "Rejected"
+msgstr ""
+
+#: includes/class-screens.php:113
+msgid "Sent by fallback"
+msgstr ""
+
+#: includes/class-screens.php:113
+#: includes/class-screens.php:221
+#: includes/class-screens.php:254
+#: includes/class-screens.php:268
+#: includes/class-screens.php:901
+msgid "Sent"
+msgstr ""
+
+#: includes/class-screens.php:115
+#: includes/class-screens.php:224
+#: includes/class-screens.php:254
+#: includes/class-screens.php:268
+#: includes/class-screens.php:903
+msgid "Failed"
+msgstr ""
+
+#: includes/class-screens.php:117
+#: includes/class-screens.php:905
+msgid "Not sent"
+msgstr ""
+
+#. translators: %s: time to wait, like "5 min".
+#: includes/class-screens.php:119
+#: includes/class-sender.php:226
+msgid "Will try again"
+msgstr ""
+
+#: includes/class-screens.php:196
+msgid "Your emails still go out the default way (PHP mail). Many of them end up in spam or are never delivered."
+msgstr ""
+
+#: includes/class-screens.php:197
+msgid "Choose the service that sends your emails"
+msgstr ""
+
+#: includes/class-screens.php:197
+msgid "Amazon SES, SendGrid, Brevo, Mailgun, Postmark, Resend and more, or any SMTP server. Every service is free in Aluleth SMTP."
+msgstr ""
+
+#: includes/class-screens.php:204
+#: includes/class-screens.php:217
+#: includes/class-screens.php:420
+msgid "Add a connection"
+msgstr ""
+
+#: includes/class-screens.php:207
+msgid "Some emails failed"
+msgstr ""
+
+#: includes/class-screens.php:207
+msgid "All emails are going out"
+msgstr ""
+
+#. translators: 1: number of connections, 2: number of emails waiting.
+#: includes/class-screens.php:209
+#, php-format
+msgid "%1$d connection · %2$d waiting in the queue · last 30 days"
+msgid_plural "%1$d connections · %2$d waiting in the queue · last 30 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-screens.php:221
+msgid "accepted by your services"
+msgstr ""
+
+#: includes/class-screens.php:222
+msgid "Delivery rate"
+msgstr ""
+
+#: includes/class-screens.php:222
+msgid "sent out of all tried"
+msgstr ""
+
+#: includes/class-screens.php:223
+msgid "Saved by fallback"
+msgstr ""
+
+#: includes/class-screens.php:223
+msgid "the first connection failed"
+msgstr ""
+
+#: includes/class-screens.php:224
+msgid "after every try"
+msgstr ""
+
+#: includes/class-screens.php:225
+msgid "in the queue now"
+msgstr ""
+
+#: includes/class-screens.php:229
+msgid "confirmed by your services"
+msgstr ""
+
+#: includes/class-screens.php:235
+msgid "refused by the inbox"
+msgstr ""
+
+#: includes/class-screens.php:236
+msgid "marked as spam"
+msgstr ""
+
+#: includes/class-screens.php:254
+msgid "Emails per day"
+msgstr ""
+
+#: includes/class-screens.php:255
+msgid "Emails sent and failed per day, last 30 days"
+msgstr ""
+
+#. translators: 1: date, 2: sent, 3: failed.
+#: includes/class-screens.php:258
+#, php-format
+msgid "%1$s: %2$d sent, %3$d failed"
+msgstr ""
+
+#: includes/class-screens.php:261
+msgid "Today"
+msgstr ""
+
+#: includes/class-screens.php:264
+msgid "Who sends the emails"
+msgstr ""
+
+#: includes/class-screens.php:266
+msgid "No email yet."
+msgstr ""
+
+#: includes/class-screens.php:268
+#: includes/class-screens.php:883
+#: includes/class-screens.php:927
+msgid "Source"
+msgstr ""
+
+#: includes/class-screens.php:268
+msgid "Kind"
+msgstr ""
+
+#: includes/class-screens.php:277
+#: includes/class-screens.php:981
+msgid "Marketing"
+msgstr ""
+
+#: includes/class-screens.php:277
+#: includes/class-screens.php:981
+msgid "Transactional"
+msgstr ""
+
+#: includes/class-screens.php:283
+msgid "Needs a look"
+msgstr ""
+
+#. translators: %d: number of emails.
+#: includes/class-screens.php:292
+#, php-format
+msgid "%d email failed in the last 30 days"
+msgid_plural "%d emails failed in the last 30 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-screens.php:293
+msgid "Open"
+msgstr ""
+
+#: includes/class-screens.php:299
+#: includes/class-screens.php:1061
+msgid "Email"
+msgstr ""
+
+#: includes/class-screens.php:310
+msgid "Alerts when sending fails"
+msgstr ""
+
+#: includes/class-screens.php:310
+msgid "No alert set up."
+msgstr ""
+
+#: includes/class-screens.php:310
+msgid "at most one every 15 minutes"
+msgstr ""
+
+#: includes/class-screens.php:310
+msgid "Change the alerts"
+msgstr ""
+
+#: includes/class-screens.php:322
+#: includes/class-screens.php:718
+msgid "Which email goes where"
+msgstr ""
+
+#: includes/class-screens.php:325
+#: includes/class-screens.php:430
+msgid "Main"
+msgstr ""
+
+#: includes/class-screens.php:325
+#: includes/class-screens.php:430
+#: includes/class-screens.php:742
+msgid "Fallback"
+msgstr ""
+
+#: includes/class-screens.php:325
+#: includes/class-screens.php:430
+msgid "Through rules"
+msgstr ""
+
+#: includes/class-screens.php:329
+#: includes/class-screens.php:438
+msgid "Check this"
+msgstr ""
+
+#. translators: 1: used, 2: limit, 3: unit (second, minute…).
+#: includes/class-screens.php:343
+#: includes/class-screens.php:791
+#, php-format
+msgid "%1$d / %2$d per %3$s"
+msgstr ""
+
+#: includes/class-screens.php:345
+msgid "no sending limit set"
+msgstr ""
+
+#: includes/class-screens.php:360
+msgid "second"
+msgstr ""
+
+#: includes/class-screens.php:361
+msgid "minute"
+msgstr ""
+
+#: includes/class-screens.php:362
+msgid "hour"
+msgstr ""
+
+#: includes/class-screens.php:363
+msgid "day"
+msgstr ""
+
+#: includes/class-screens.php:380
+msgid "Send a test email"
+msgstr ""
+
+#: includes/class-screens.php:384
+msgid "Through"
+msgstr ""
+
+#: includes/class-screens.php:388
+msgid "Send the test email"
+msgstr ""
+
+#: includes/class-screens.php:413
+msgid "Each connection is an account at an email service. Add a second one as a fallback: it takes over when the first one fails."
+msgstr ""
+
+#: includes/class-screens.php:423
+msgid "No connection yet."
+msgstr ""
+
+#: includes/class-screens.php:426
+#: includes/class-screens.php:994
+msgid "Connection"
+msgstr ""
+
+#: includes/class-screens.php:426
+#: includes/class-screens.php:992
+msgid "From"
+msgstr ""
+
+#: includes/class-screens.php:426
+msgid "Use"
+msgstr ""
+
+#: includes/class-screens.php:426
+msgid "Last check"
+msgstr ""
+
+#: includes/class-screens.php:426
+msgid "Actions"
+msgstr ""
+
+#: includes/class-screens.php:436
+msgid "Paste the key again"
+msgstr ""
+
+#: includes/class-screens.php:446
+msgid "Not reported"
+msgstr ""
+
+#: includes/class-screens.php:449
+msgid "Reported"
+msgstr ""
+
+#: includes/class-screens.php:469
+msgid "Edit"
+msgstr ""
+
+#: includes/class-screens.php:470
+msgid "Check"
+msgstr ""
+
+#: includes/class-screens.php:471
+msgid "Delete"
+msgstr ""
+
+#: includes/class-screens.php:486
+msgid "Make the app (once, about 5 minutes)"
+msgstr ""
+
+#: includes/class-screens.php:491
+msgid "Redirect URI to enter in the app"
+msgstr ""
+
+#: includes/class-screens.php:493
+msgid "Your permalinks are set to “Plain”: Google and Microsoft may refuse this address. Choose any other permalink structure in Settings › Permalinks."
+msgstr ""
+
+#: includes/class-screens.php:511
+msgid "Signed in"
+msgstr ""
+
+#: includes/class-screens.php:511
+msgid "Not signed in"
+msgstr ""
+
+#. translators: 1: email address, 2: date.
+#: includes/class-screens.php:515
+#, php-format
+msgid "Sends as %1$s (signed in on %2$s)."
+msgstr ""
+
+#: includes/class-screens.php:517
+msgid "Paste the client ID and secret of your app below and save, then sign in with the account that sends the emails."
+msgstr ""
+
+#: includes/class-screens.php:520
+msgid "Sign in again"
+msgstr ""
+
+#: includes/class-screens.php:522
+msgid "Sign out"
+msgstr ""
+
+#: includes/class-screens.php:522
+msgid "Emails will no longer go through this connection. Sign out?"
+msgstr ""
+
+#. translators: 1: plugin name, 2: services.
+#: includes/class-screens.php:542
+#, php-format
+msgid "%1$s settings found: %2$s."
+msgstr ""
+
+#. translators: 1: plugin name, 2: services.
+#: includes/class-screens.php:542
+msgid "Import them: the keys come along, and each connection is checked with its service."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/class-screens.php:544
+#, php-format
+msgid "Import from %s"
+msgstr ""
+
+#. translators: %s: plugin names.
+#: includes/class-screens.php:583
+#, php-format
+msgid "Also active: %s. Two plugins that send emails get in each other’s way, and some send every email themselves. Import its settings (Connections), then deactivate it."
+msgstr ""
+
+#: includes/class-screens.php:593
+msgid "Step 1 of 2"
+msgstr ""
+
+#: includes/class-screens.php:593
+msgid "Which service sends your emails?"
+msgstr ""
+
+#: includes/class-screens.php:593
+msgid "All of them are free in Aluleth SMTP. You need an account with the service."
+msgstr ""
+
+#: includes/class-screens.php:624
+msgid "Step 2 of 2"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-screens.php:626
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-screens.php:626
+#, php-format
+msgid "Connect %s"
+msgstr ""
+
+#: includes/class-screens.php:628
+msgid "Where do I find these?"
+msgstr ""
+
+#: includes/class-screens.php:661
+msgid "Set in wp-config.php"
+msgstr ""
+
+#. translators: %s: name of a PHP constant.
+#: includes/class-screens.php:667
+#, php-format
+msgid "The constant %s in wp-config.php is used."
+msgstr ""
+
+#: includes/class-screens.php:669
+msgid "Paste it here yourself. It is stored encrypted and never shown again."
+msgstr ""
+
+#. translators: %s: PHP code to add to wp-config.php.
+#: includes/class-screens.php:671
+#, php-format
+msgid "Or keep it out of the database with %s in wp-config.php."
+msgstr ""
+
+#: includes/class-screens.php:682
+msgid "From email"
+msgstr ""
+
+#: includes/class-screens.php:683
+msgid "From name"
+msgstr ""
+
+#: includes/class-screens.php:685
+msgid "Use this From email for every email (recommended: other addresses would fail the checks of Gmail and Outlook)"
+msgstr ""
+
+#: includes/class-screens.php:686
+msgid "Use this From name for every email (otherwise each plugin keeps its own)"
+msgstr ""
+
+#: includes/class-screens.php:689
+msgid "Use this connection"
+msgstr ""
+
+#: includes/class-screens.php:691
+msgid "For every email"
+msgstr ""
+
+#: includes/class-screens.php:691
+msgid "unless a routing rule says otherwise"
+msgstr ""
+
+#: includes/class-screens.php:692
+msgid "As a fallback"
+msgstr ""
+
+#: includes/class-screens.php:692
+msgid "when another connection fails"
+msgstr ""
+
+#: includes/class-screens.php:693
+msgid "Only through routing rules"
+msgstr ""
+
+#: includes/class-screens.php:693
+msgid "for example for marketing emails"
+msgstr ""
+
+#: includes/class-screens.php:698
+msgid "Sending limit (optional)"
+msgstr ""
+
+#: includes/class-screens.php:698
+msgid "Number of emails"
+msgstr ""
+
+#: includes/class-screens.php:698
+msgid "Per"
+msgstr ""
+
+#. translators: %s: unit.
+#: includes/class-screens.php:701
+#, php-format
+msgid "per %s"
+msgstr ""
+
+#: includes/class-screens.php:703
+msgid "Your plan’s limit at the service. Above it, emails wait in the queue instead of being refused. Empty or 0: no limit."
+msgstr ""
+
+#: includes/class-screens.php:704
+msgid "Name in Aluleth (optional)"
+msgstr ""
+
+#: includes/class-screens.php:705
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-screens.php:705
+msgid "Save and check"
+msgstr ""
+
+#: includes/class-screens.php:718
+msgid "Rules are read from the top. The first one that matches decides. Emails no rule matches use the main connection."
+msgstr ""
+
+#: includes/class-screens.php:741
+msgid "Main connection"
+msgstr ""
+
+#: includes/class-screens.php:742
+msgid "No fallback"
+msgstr ""
+
+#: includes/class-screens.php:744
+msgid "Rules"
+msgstr ""
+
+#: includes/class-screens.php:744
+msgid "Add a rule"
+msgstr ""
+
+#: includes/class-screens.php:766
+msgid "No rule: every email uses the main connection, then the fallback. Add a rule to send, for example, marketing emails through another service."
+msgstr ""
+
+#: includes/class-screens.php:769
+msgid "Queue"
+msgstr ""
+
+#: includes/class-screens.php:770
+msgid "Send marketing emails in the background (recommended: visitors never wait, limits are kept)"
+msgstr ""
+
+#: includes/class-screens.php:771
+msgid "Pause the queue (emails sent right away still go out)"
+msgstr ""
+
+#: includes/class-screens.php:772
+msgid "Save routing"
+msgstr ""
+
+#: includes/class-screens.php:774
+msgid "Queue now"
+msgstr ""
+
+#. translators: %d: number of emails.
+#: includes/class-screens.php:776
+msgid "email waiting"
+msgid_plural "emails waiting"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of emails.
+#: includes/class-screens.php:779
+#, php-format
+msgid "%d will be tried again."
+msgid_plural "%d will be tried again."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-screens.php:782
+msgid "Paused"
+msgstr ""
+
+#: includes/class-screens.php:794
+msgid "Send what is due now"
+msgstr ""
+
+#: includes/class-screens.php:797
+msgid "How emails leave"
+msgstr ""
+
+#: includes/class-screens.php:797
+msgid "Order and password emails go out at once. Queued emails go out right after the page has been sent to the visitor, and every minute with WordPress’s scheduler. For big lists, a real server cron keeps the pace steady:"
+msgstr ""
+
+#: includes/class-screens.php:839
+msgid "Rule name"
+msgstr ""
+
+#: includes/class-screens.php:839
+msgid "Campaigns"
+msgstr ""
+
+#: includes/class-screens.php:840
+msgid "Sent by"
+msgstr ""
+
+#: includes/class-screens.php:840
+msgid "Any plugin"
+msgstr ""
+
+#: includes/class-screens.php:845
+msgid "Kind of email"
+msgstr ""
+
+#: includes/class-screens.php:845
+msgid "Any"
+msgstr ""
+
+#: includes/class-screens.php:845
+msgid "Marketing (newsletter, campaign)"
+msgstr ""
+
+#: includes/class-screens.php:845
+msgid "Transactional (order, account, form)"
+msgstr ""
+
+#: includes/class-screens.php:846
+msgid "From email contains"
+msgstr ""
+
+#: includes/class-screens.php:847
+msgid "Send with"
+msgstr ""
+
+#: includes/class-screens.php:848
+msgid "If it fails"
+msgstr ""
+
+#: includes/class-screens.php:848
+msgid "The usual fallback"
+msgstr ""
+
+#: includes/class-screens.php:849
+#: includes/class-screens.php:1071
+msgid "Remove"
+msgstr ""
+
+#: includes/class-screens.php:882
+msgid "Search the log"
+msgstr ""
+
+#: includes/class-screens.php:882
+msgid "Email address or subject"
+msgstr ""
+
+#: includes/class-screens.php:883
+msgid "All sources"
+msgstr ""
+
+#: includes/class-screens.php:900
+msgid "All"
+msgstr ""
+
+#: includes/class-screens.php:925
+msgid "No email here."
+msgstr ""
+
+#: includes/class-screens.php:927
+msgid "To and subject"
+msgstr ""
+
+#: includes/class-screens.php:927
+msgid "Via"
+msgstr ""
+
+#: includes/class-screens.php:927
+msgid "When"
+msgstr ""
+
+#: includes/class-screens.php:937
+#: includes/class-screens.php:981
+#: includes/class-tracking.php:217
+msgid "(no subject)"
+msgstr ""
+
+#. translators: 1: days kept, 2: days kept for failed emails.
+#: includes/class-screens.php:945
+#, php-format
+msgid "Emails are kept %1$d days, failed ones %2$d days. Links that give access to an account are never kept."
+msgstr ""
+
+#: includes/class-screens.php:946
+msgid "Change what is kept"
+msgstr ""
+
+#: includes/class-screens.php:983
+msgid "Send again"
+msgstr ""
+
+#: includes/class-screens.php:985
+msgid "Delete from the log"
+msgstr ""
+
+#: includes/class-screens.php:991
+msgid "To"
+msgstr ""
+
+#: includes/class-screens.php:993
+msgid "Reply to"
+msgstr ""
+
+#: includes/class-screens.php:994
+msgid "fallback"
+msgstr ""
+
+#: includes/class-screens.php:995
+msgid "Message ID"
+msgstr ""
+
+#: includes/class-screens.php:996
+msgid "Created"
+msgstr ""
+
+#: includes/class-screens.php:997
+msgid "Attempts"
+msgstr ""
+
+#: includes/class-screens.php:1000
+msgid "Last answer"
+msgstr ""
+
+#: includes/class-screens.php:1008
+msgid "What was sent"
+msgstr ""
+
+#: includes/class-screens.php:1010
+msgid "Only a summary of this email was kept (to, subject, status), as set in Log and alerts."
+msgstr ""
+
+#: includes/class-screens.php:1013
+msgid "Links and codes that give access to an account were hidden before saving, so an old log can never be used to get into the site."
+msgstr ""
+
+#: includes/class-screens.php:1016
+msgid "Email content"
+msgstr ""
+
+#: includes/class-screens.php:1021
+msgid "Attachments:"
+msgstr ""
+
+#: includes/class-screens.php:1024
+msgid "What happened"
+msgstr ""
+
+#: includes/class-screens.php:1039
+msgid "The whole email (links that give access hidden)"
+msgstr ""
+
+#: includes/class-screens.php:1040
+msgid "Only a summary: to, subject, status"
+msgstr ""
+
+#: includes/class-screens.php:1041
+msgid "Nothing once sent (failed ones stay)"
+msgstr ""
+
+#: includes/class-screens.php:1046
+msgid "What the log keeps"
+msgstr ""
+
+#: includes/class-screens.php:1048
+msgid "Transactional emails (orders, accounts, forms)"
+msgstr ""
+
+#: includes/class-screens.php:1049
+msgid "Marketing emails (newsletters, campaigns)"
+msgstr ""
+
+#: includes/class-screens.php:1057
+msgid "Keep sent emails (days)"
+msgstr ""
+
+#: includes/class-screens.php:1058
+msgid "Keep failed emails (days)"
+msgstr ""
+
+#: includes/class-screens.php:1059
+msgid "A summary for big mailings keeps your database small: 100,000 summaries take about 30 MB, full emails can take gigabytes."
+msgstr ""
+
+#: includes/class-screens.php:1061
+msgid "Alerts when emails cannot be sent"
+msgstr ""
+
+#: includes/class-screens.php:1061
+msgid "At most one alert every 15 minutes, with the number of failed emails and the last error."
+msgstr ""
+
+#: includes/class-screens.php:1062
+msgid "Send the email alert to"
+msgstr ""
+
+#: includes/class-screens.php:1064
+msgid "Slack webhook address"
+msgstr ""
+
+#: includes/class-screens.php:1065
+msgid "Discord webhook address"
+msgstr ""
+
+#: includes/class-screens.php:1066
+msgid "Telegram bot token"
+msgstr ""
+
+#: includes/class-screens.php:1069
+msgid "Saved. Leave empty to keep it."
+msgstr ""
+
+#: includes/class-screens.php:1075
+msgid "Telegram chat ID"
+msgstr ""
+
+#: includes/class-screens.php:1076
+msgid "Save"
+msgstr ""
+
+#: includes/class-screens.php:1077
+msgid "Try the alerts"
+msgstr ""
+
+#: includes/class-screens.php:1077
+msgid "Sends a test alert on every channel saved above."
+msgstr ""
+
+#: includes/class-screens.php:1078
+msgid "Send a test alert"
+msgstr ""
+
+#: includes/class-screens.php:1079
+msgid "Your data"
+msgstr ""
+
+#: includes/class-screens.php:1079
+msgid "The log can be exported and erased per person with the WordPress privacy tools (Tools › Export / Erase Personal Data). What happens when the plugin is deleted is set in Aluleth › Settings."
+msgstr ""
+
+#: includes/class-sender.php:69
+msgid "The email has no valid recipient."
+msgstr ""
+
+#: includes/class-sender.php:110
+msgid "Not sent: blocked address"
+msgstr ""
+
+#: includes/class-sender.php:112
+msgid "Every recipient is on the blocked list."
+msgstr ""
+
+#. translators: %s: addresses and reasons.
+#: includes/class-sender.php:133
+msgid "Some recipients were left out"
+msgstr ""
+
+#. translators: %s: addresses and reasons.
+#: includes/class-sender.php:133
+#, php-format
+msgid "Blocked: %s"
+msgstr ""
+
+#: includes/class-sender.php:144
+msgid "Queued"
+msgstr ""
+
+#: includes/class-sender.php:144
+msgid "Marketing email, sent in the background."
+msgstr ""
+
+#. translators: %d: seconds.
+#: includes/class-sender.php:223
+msgid "Waiting for the sending limit"
+msgstr ""
+
+#. translators: %d: seconds.
+#: includes/class-sender.php:223
+#, php-format
+msgid "Next try in %d s."
+msgstr ""
+
+#. translators: %s: time to wait, like "5 min".
+#: includes/class-sender.php:226
+#, php-format
+msgid "In %s."
+msgstr ""
+
+#: includes/class-sender.php:323
+msgid "No connection can send this email. Add one in Aluleth › Email sending."
+msgstr ""
+
+#: includes/class-sender.php:349
+msgid "The saved key can no longer be read (the site’s secret keys changed). Paste it again in the connection."
+msgstr ""
+
+#. translators: %s: connection name.
+#: includes/class-sender.php:360
+#, php-format
+msgid "Accepted by %s"
+msgstr ""
+
+#. translators: %s: connection name.
+#: includes/class-sender.php:376
+#, php-format
+msgid "%s did not send it"
+msgstr ""
+
+#: includes/class-sender.php:385
+msgid "Waiting for the sending limit of the connection."
+msgstr ""
+
+#: includes/class-tracking.php:183
+msgid "a recipient"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:190
+#, php-format
+msgid "Delivered to %s"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:195
+#, php-format
+msgid "Bounced: %s does not exist"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:203
+#, php-format
+msgid "Soft bounce for %s"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:209
+#, php-format
+msgid "%s marked it as spam"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:216
+#, php-format
+msgid "Rejected by the service after it was accepted (%s)"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:221
+#, php-format
+msgid "Delayed for %s, the service tries again"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-tracking.php:228
+#, php-format
+msgid "%s unsubscribed"
+msgstr ""
